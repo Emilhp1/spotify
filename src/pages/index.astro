@@ -1,5 +1,8 @@
 ---
-
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import Box from "../components/Box.astro";
 ---
 
 <html lang="en">
@@ -9,8 +12,35 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+
 	</head>
+
+
 	<body>
-		<h1>Astro</h1>
+		<Nav/>
+		<h1>Spotify</h1>
+<main class="grid">
+
+<Card header="kunstner" text="beskrivelse">
+	<img src="https://picsum.photos/id/65/150/150" alt="">
+</Card>
+<Card header="kunstner" text="beskrivelse">
+	<img src="https://picsum.photos/id/68/150/150" alt="">
+</Card>
+<Card header="kunstner" text="beskrivelse">
+	<img src="https://picsum.photos/id/68/150/150" alt="">
+</Card>
+<Card header="kunstner" text="beskrivelse">
+	<img src="https://picsum.photos/id/68/150/150" alt="">
+</Card>
+<Card header="kunstner" text="beskrivelse">
+	<img src="https://picsum.photos/id/68/150/150" alt="">
+</Card>
+
+
+
+
+	
+</main>
 	</body>
 </html>

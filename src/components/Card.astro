@@ -1,0 +1,22 @@
+---
+const header = Astro.props.header;
+const text = Astro.props.text;
+---
+
+<article class="card" >
+    <slot/>
+    <h2 class="h2">{header}</h2>
+    <p class="p">{text}</p>
+</article>
+
+
+<style>
+.card{
+    background-color: rgb(72, 70, 70);
+
+}
+ .h2, .p {
+    padding-left: 5%;
+ }
+
+</style>
