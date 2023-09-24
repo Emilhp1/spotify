@@ -1,13 +1,49 @@
 ---
-import Card from "./Card.astro";
+const h1box = Astro.props.h1box;
 ---
 
 
 
 <section class="box">
-    
+    <div class="grid-1-1">
+    <h1>{h1box}</h1>
+    <a href="#">Show all</a>
+    </div>
+    <ul>
+<slot/>
+</ul>
 </section>
 
 <style>
-   
+    .box{background-color: #1d1d1d}
+   h1{
+    color: aliceblue;
+   }
+   ul{
+    display: flex;
+    gap: 1%;
+   }
+   h1{
+    padding-left: 1%;
+    padding-top: 1%;
+   }
+   .grid-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+   a{
+    margin-left: 80%;
+    margin-right: 10%;
+    margin-top: 2%;
+    /* padding-left: 80%; */
+    padding-top: 1%;
+  
+    text-decoration: none;
+    color: grey;
+   }
+   a:hover{
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+   }
 </style>
